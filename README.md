@@ -50,7 +50,7 @@ Ecommerce/
 
 🚀 How to Run
 1. Download or clone the repository:
-   git clone https://github.com/yourusername/Minnie-Grocery.git
+   git clone https://github.com/BishamW/Minnie-Grocery.git
 
 2. Open index.html in your browser for the customer pages.
 3. Open admin/index.html for the admin panel.
