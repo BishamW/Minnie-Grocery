@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Categories</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 sticky-top">
+        <a class="navbar-brand" href="./index.html">Minnie Grocery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./productList.html">Products</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./categoryProduct.html">Categories</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./cart.html">
+                <i class="bi bi-basket"></i>
+              </a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a href="./login.html" class="btn btn-success">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Vegetables</h2>
+          <form>
+            <div>
+              <!-- Category Filter -->
+              <div class="form-grou mb-3">
+                <label for="categoryFilter">Category</label>
+                <select id="categoryFilter" class="form-control">
+                  <option value="">All Categories</option>
+                  <option value="category1">Noodles</option>
+                  <option value="category2">Vegetables</option>
+                  <option value="category3">Cereals</option>
+                  <!-- Add more category options as needed -->
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Apply Filters
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-9">
+          <div class="row">
+            <!-- Product Cards (example) -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://static-01.daraz.com.np/p/3a922d3390858993cd8dbfa9197ac0be.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Broccoli</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <p class="card-text">Price: $19.99</p>
+                  <a href="./productDetails.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://static-01.daraz.com.np/p/ae91619d8a37d8690f987d952de7c790.jpg_300x0q75.webp"
+                  class="card-img-top"
+                  alt="Product 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cucumber</h5>
+                  <p class="card-text">
+                    Sed sagittis odio vitae enim luctus dictum.
+                  </p>
+                  <p class="card-text">Price: $24.99</p>
+                  <a href="./productDetails.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://static-01.daraz.com.np/p/3d752b4001cedb479473c4464c2c57fe.jpg"
+                  class="card-img-top"
+                  alt="Product 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Beans</h5>
+                  <p class="card-text">
+                    Phasellus ac odio vitae enim luctus dictum.
+                  </p>
+                  <p class="card-text">Price: $29.99</p>
+                  <a href="./productDetails.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="https://static-01.daraz.com.np/p/cb3135975ff436440d6bd036b24e760d.jpg"
+                  class="card-img-top"
+                  alt="Product 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dried Beans</h5>
+                  <p class="card-text">
+                    Phasellus ac odio vitae enim luctus dictum.
+                  </p>
+                  <p class="card-text">Price: $29.99</p>
+                  <a href="./productDetails.html" class="btn btn-primary"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 Minnie Grocery. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

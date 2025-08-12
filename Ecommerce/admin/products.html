@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products-Admin-Minnie Grocery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 sticky-top">
+        <a class="navbar-brand" href="../index.html">Minnie Grocery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="../admin/">Welcome</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link text-success" href="./products.html"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./category.html">Category</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./orders.html">Orders</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./payments.html">Payments</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./users.html">Users</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="./pages.html">Pages</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-4">
+      <h1 class="mb-4">Product Management</h1>
+
+      <!-- Add New Product Form -->
+      <div class="card mb-4">
+        <div class="card-header">Add New Product</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group mb-2">
+              <label for="product-name">Product Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="product-name"
+                required
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="product-price">Product Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="product-price"
+                required
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="product-category">Product Category</label>
+              <select class="form-control" id="product-category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Footware">Footware</option>
+                <option value="Kitchenware">Kitchenware</option>
+              </select>
+            </div>
+            <div class="form-group mb-2">
+              <label for="product-description">Product Description</label>
+              <textarea
+                class="form-control"
+                id="product-description"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group mb-2">
+              <label for="product-image">Product Image</label>
+              <div class="custom-file">
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="product-image"
+                  accept="image/*"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Product List Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product Image</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://static-01.daraz.com.np/p/2a65779bbc59ff651a0eba422a2c834f.jpg"
+                alt="Product 1"
+                width="100"
+              />
+            </td>
+            <td>Beverages</td>
+            <td>$19.99</td>
+            <td>Clothes</td>
+            <td>This is a sample product description.</td>
+            <td>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static-01.daraz.com.np/p/3dbcdf5ba0154cb9d8987ab96a957ad1.jpg"
+                alt="Product 2"
+                width="100"
+              />
+            </td>
+            <td>7-in-1 Kitchen set</td>
+            <td>$29.99</td>
+            <td>Kitchenware</td>
+            <td>This is another sample product description.</td>
+            <td>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://static-01.daraz.com.np/p/3a922d3390858993cd8dbfa9197ac0be.jpg"
+                alt="Product 3"
+                width="100"
+              />
+            </td>
+            <td>Broccoli</td>
+            <td>$15.99</td>
+            <td>Vegetables</td>
+            <td>This is a third sample product description.</td>
+            <td>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 Minnie Grocery. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
